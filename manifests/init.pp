@@ -42,6 +42,7 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
+neigh
 class ssh(
   String $package_name,
   String $service_name,
