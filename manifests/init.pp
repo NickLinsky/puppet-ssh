@@ -54,13 +54,13 @@ class ssh(
   notify { "test top scope var in a module":
     message => "test top scope ${::test_top_scope}"
   }
-  class { '::ssh::service': }
-  class { '::ssh::config': }
-  class { '::ssh::install': }
-
-  Class['::ssh::install'] 
-  -> Class['::ssh::config']
-  ~> Class['::ssh::service']
-  -> Class['ssh']
-
+#  class { '::ssh::service': }
+#  class { '::ssh::config': }
+#  class { '::ssh::install': }
+#
+#  Class['::ssh::install'] 
+#  -> Class['::ssh::config']
+#  ~> Class['::ssh::service']
+#  -> Class['ssh']
+#
 }
