@@ -43,7 +43,7 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class ssh
-#(
+(
   #String $package_name,
   #String $service_name,
   #String $ensure,
@@ -51,7 +51,7 @@ class ssh
   #Boolean $service_enable,
   #Boolean $permit_root_login = false,
   #Integer $port              = 22,
-#) 
+) 
 {
   notify { "test top scope var in a module":
     message => "test top scope ${::test_top_scope}"
