@@ -53,6 +53,8 @@ class ssh
   Integer $port              = 22,
 ) 
 {
+  class ssh::data {
+  }
   notify { "test top scope var in a module":
     message => "test top scope ${::test_top_scope}"
   }
